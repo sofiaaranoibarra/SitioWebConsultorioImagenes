@@ -1,0 +1,570 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+/* Fuente */
+@import url('https://fonts.googleapis.com/css2?family=Philosopher:ital,wght@0,400;0,700;1,400;1,700&family=Red+Rose:wght@300..700&display=swap');
+
+
+/* HEADER */
+
+header{
+    
+    color: black;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+header img{
+    width: 40px;
+    margin-left: 40px;
+}
+
+.navbar-nav .nav-link.active, .navbar-nav .nav-link.show {
+  color:#338ebf;
+  font-weight: bold;
+}
+ 
+/* MAIN */
+
+body{
+    padding-top: 90px;
+}
+
+h1{
+    color: #489CC1;
+    font-family: "Philosopher", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+}
+
+h2{
+    font-family: "Philosopher", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+}
+
+ul{
+    font-family: "Philosopher", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+p{
+    font-family: "Philosopher", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+main{
+    text-align: center;
+}
+
+.ubicacion img{
+    width: 30px;
+}
+
+.turnos p{
+    font-family: "Philosopher", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+.turnos label{
+    font-family: "Philosopher", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.turnos input{
+    font-family: "Philosopher", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+main li{
+    list-style: none;
+}
+
+.presentacion{
+    width: 1100px;
+    height: 200px;
+    padding: 50px 50px;
+    margin: 0 auto;
+    border: 20px;
+    display: flex;
+}
+   
+.presentacion p{
+    text-align: center;
+    line-height: 25px;
+ }
+
+.iconos-ecografias{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin: 20px auto;
+    padding: 20px;
+    border: 2px solid #489CC1;
+    border-radius: 10px;
+    background-color: #f0f9f7;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    text-align: center;
+    max-width: 1000px;
+    width: 90%;
+}
+
+.iconos-ecografias img{
+    width: 200px;
+}
+
+.carousel{
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.carousel img{
+    border-radius: 12px;
+    object-fit: cover;
+}
+
+
+/* CONTENEDOR GRID */
+
+.contenedor{
+    display: grid;
+    grid-template-areas: 
+    "titulo titulo titulo"
+    "subtitulo1 subtitulo2 subtitulo3"
+    "texto1       texto2    texto3"
+    "texto1       texto2    texto3"
+    "texto1       texto2    texto3"
+    "foto1        foto2     foto3";
+
+    /* Ancho de cada columna*/
+    grid-template-columns: 30% 30% 30%;
+
+    /* Alto de cada fila*/
+    grid-template-rows: auto;
+
+    row-gap: 20px;
+    column-gap: 20px;
+    justify-items: center;
+    align-items: start;
+    justify-content: center;
+    margin-bottom: 0;
+    padding-bottom: 60px;
+}
+
+.contenedor img{
+    width: 100%;
+    height: auto;
+    max-width: 250px;
+    object-fit: cover;
+    box-shadow: 13px -9px 13px -3px rgba(0,0,0,0.87);
+    border-radius: 6px 6px 6px 6px;
+    margin: 10px 0;
+}
+
+.titulo{
+    grid-area: titulo;
+}
+
+.subtitulo1{
+    grid-area: subtitulo1;
+}
+
+.subtitulo2{
+    grid-area: subtitulo2;
+}
+
+.subtitulo3{
+    grid-area: subtitulo3;
+}
+
+.texto1{
+    grid-area: texto1;
+}
+
+.texto2{
+    grid-area: texto2;
+}
+
+.texto3{
+    grid-area: texto3;
+}
+
+.foto1{
+    grid-area: foto1;
+}
+
+.foto2{
+    grid-area: foto2;
+}
+
+.foto3{
+    grid-area: foto3;
+}
+
+/* UBICACION Y FORMULARIO */
+
+.ubicacion-formulario{
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 30px;
+    margin: 30px auto;
+    flex-wrap: wrap;
+    max-width: 1200px;
+    padding: 0 20px;
+    box-sizing: border-box;
+}
+
+.ubicacion-caja{
+    flex: 1 1 400px;
+    border: 2px solid #489CC1;
+    border-radius: 12px;
+    padding: 20px;
+    background-color: #f9f9f9;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+.ubicacion-caja .direccion{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 15px;
+}
+
+.ubicacion-caja i{
+    font-size: 24px;
+    color: #489CC1;
+}
+
+.ubicacion-caja p{
+    margin: 0;
+}
+
+/* MAPA */
+
+.ubicacion-caja iframe{
+    width: 100%;
+    height: 300px;
+    border: none;
+    border-radius: 8px;
+}
+
+/* FORMULARIO */
+
+.formulario{
+    flex: 1 1 400px;
+    border: 2px solid #489CC1;
+    border-radius: 12px;
+    padding: 25px 30px;
+    background-color: #f9f9f9;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+.formulario h2{
+    text-align: center;
+    margin-bottom: 20px;
+    color: #489CC1;
+}
+
+.formulario form{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.formulario label{
+    font-weight: 600;
+}
+
+.formulario input,
+.formulario textarea{
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font-family: "Philosopher", sans-serif;
+}
+
+.formulario input:focus,
+.formulario textarea:focus{
+    border-color: #489CC1;
+    outline: none;
+    box-shadow: 0 0 5px rgba(72,156,193,0.4);
+}
+
+.formulario .boton{
+    background-color: #489CC1;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    padding: 12px;
+    cursor: pointer;
+    font-weight: 600;
+    transition: background 0.3s ease;
+}
+
+.formulario .boton:hover {
+    background-color: #338ebf;
+}
+
+/* FORMULARIO DE REGISTRO */
+
+.registro-usuario{
+    border: 2px solid #489CC1;
+    border-radius: 12px;
+    padding: 25px 30px;
+    max-width: 500px;
+    margin: 30px auto;
+    background-color: #f9f9f9;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    font-family: "Philosopher", sans-serif;
+}
+
+.registro-usuario h2{
+    text-align: center;
+    margin-bottom: 20px;
+    color: #489CC1;
+}
+
+/* Formulario */
+.registro-usuario form{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+/* Datos personales y selección de ecografía */
+.datos-personales,
+.tipo-ecografia{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.datos-personales label,
+.tipo-ecografia label{
+    font-weight: 600;
+}
+
+/* Inputs y textarea */
+.registro-usuario input,
+.registro-usuario select,
+.registro-usuario textarea{
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font-size: 14px;
+}
+
+.registro-usuario input:focus,
+.registro-usuario select:focus,
+.registro-usuario textarea:focus{
+    border-color: #489CC1;
+    outline: none;
+    box-shadow: 0 0 5px rgba(72,156,193,0.4);
+}
+
+/* Botón de envío */
+.boton-enviar .boton{
+    background-color: #489CC1;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    padding: 12px;
+    cursor: pointer;
+    font-weight: 600;
+    transition: background 0.3s ease;
+}
+
+.boton-enviar .boton:hover{
+    background-color: #338ebf;
+}
+
+/* FOOTER */
+
+footer{
+    font-family: "Philosopher", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.footer{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 20px;
+    background-color:#aaf3d4;
+    color: black;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+.frase-pie{
+    flex: 1;
+    text-align: left;
+    padding-right: 20px;
+}
+
+.social{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 5px;
+}
+
+.social h4{
+    margin: 0;
+    font-size: 18px;
+}
+
+.social-iconos{
+    display: flex;
+    gap: 10px;
+}
+
+.social-iconos a{
+    display: block;
+    text-decoration: none;
+    color: inherit;
+}
+
+.social-iconos i{
+    height: 30px;
+    width: 30px;
+    line-height: normal;
+    border-radius: 50%;
+    background-color: #83ecbb;
+    color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 16px;
+    margin: 0;
+}
+
+.social-iconos i:hover{
+    background-color:#489CC1;
+}
+
+/* Responsive */
+
+/* Mobile */
+@media (max-width:480px){
+   
+    body{
+        background-color: rgb(255, 255, 255);
+    }
+
+    header{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+        padding: 10px 0;
+    }
+
+    header img{
+        margin: 0 auto;
+    }
+
+    .navegacion ul{
+        flex-direction: row;
+        justify-content: center;
+        gap: 10px;
+        width: auto;
+    }
+
+    .navegacion li a {
+        padding: 6px 10px;
+    }
+
+    .foto-presentacion{
+        width: 100%;
+    }
+
+    .presentacion{
+        width: 100%;
+        margin: 0;
+        padding: 5px 5px 5px 5px;
+    }
+
+    .presentacion p{
+        line-height: 19px;
+    }
+
+     .iconos-ecografias{
+        flex-direction: column;
+        gap: 15px;
+        padding: 20px;
+        margin: 20px;
+    }
+
+    .iconos-ecografias img{
+        width: 70px;
+    }
+
+    
+    /* CONTENEDOR GRID */
+
+    .contenedor{
+        grid-template-areas: 
+        "titulo"
+        "subtitulo1"
+        "texto1"
+        "foto1"
+        "subtitulo2"
+        "texto2"
+        "texto2"
+        "foto2"
+        "subtitulo3"
+        "texto3"
+        "foto3";
+        grid-template-columns: 1fr;
+        grid-template-rows: 60px repeat(6, auto);
+        column-gap: none;
+        row-gap: 25px;
+        padding: 15px;
+        margin-bottom: 40px;
+    }
+
+    .contenedor img{
+        width: 100%;
+        height: auto;
+        object-fit: cover;
+        border-radius: 6px;
+        margin: 10px 0;
+    }
+    
+    /* UBICACION Y FORMULARIO */
+
+    .ubicacion-formulario{
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    }
+
+    .ubicacion-caja,
+    .formulario{
+    flex: none;
+    width: 90%;
+    max-width: 400px;
+    margin: 0 auto;
+    }
+
+    /* FORMULARIO DE REGISTRO */
+
+    .registro-usuario{
+    width: 90%;
+    padding: 20px;
+    }
+}
