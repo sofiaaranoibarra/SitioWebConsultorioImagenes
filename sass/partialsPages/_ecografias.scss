@@ -1,0 +1,91 @@
+@use "../partialsGenerales/variables" as c;
+
+p{
+    font-family: c.$font;
+    font-weight: 400;
+    font-style: normal;
+}
+
+main{
+    text-align: center;
+    main li{
+        list-style: none;
+    }
+}
+
+/* contenedor grid */
+
+.contenedor{
+    display: grid;
+    grid-template-areas: 
+    "titulo titulo titulo"
+    "subtitulo1 subtitulo2 subtitulo3"
+    "texto1       texto2    texto3"
+    "texto1       texto2    texto3"
+    "texto1       texto2    texto3"
+    "foto1        foto2     foto3";
+
+    /* ancho de cada columna */
+    grid-template-columns: 30% 30% 30%;
+
+    /* alto de cada fila */
+    grid-template-rows: auto;
+
+    row-gap: 20px;
+    column-gap: 20px;
+    justify-items: center;
+    align-items: start;
+    justify-content: center;
+    margin-bottom: 0;
+    padding-bottom: 60px;
+}
+
+.contenedor img{
+    width: 100%;
+    height: auto;
+    max-width: 250px;
+    object-fit: cover;
+    box-shadow: 13px -9px 13px -3px rgba(0,0,0,0.87);
+    border-radius: 6px 6px 6px 6px;
+    margin: 10px 0;
+}
+
+.titulo{
+    grid-area: titulo;
+}
+
+.subtitulo1{
+    grid-area: subtitulo1;
+}
+
+.subtitulo2{
+    grid-area: subtitulo2;
+}
+
+.subtitulo3{
+    grid-area: subtitulo3;
+}
+
+.texto1{
+    grid-area: texto1;
+}
+
+.texto2{
+    grid-area: texto2;
+}
+
+.texto3{
+    grid-area: texto3;
+}
+
+.foto1{
+    grid-area: foto1;
+}
+
+.foto2{
+    grid-area: foto2;
+}
+
+.foto3{
+    grid-area: foto3;
+}

@@ -1,0 +1,18 @@
+/* variables */
+
+@use "./partialsGenerales/variables";
+
+/* pages html */
+
+@use "./partialsPages/index";
+@use "./partialsPages/ecografias";
+@use "./partialsPages/turnos";
+@use "./partialsPages/contacto";
+
+/* header y footer */
+
+@use "./partialsGenerales/headerFooter";
+
+/* mediaQ */
+
+@use "./partialsGenerales/mediaQueries";

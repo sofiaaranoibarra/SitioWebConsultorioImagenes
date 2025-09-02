@@ -1,0 +1,100 @@
+/* MAIN */
+body {
+  padding-top: 90px;
+}
+
+h1 {
+  color: #489CC1;
+  font-family: "Philosopher", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+}
+
+h2 {
+  font-family: "Philosopher", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+}
+
+.foto-presentacion {
+  width: 100%;
+}
+
+.presentacion {
+  width: 100%;
+  margin: 0;
+  padding: 5px 5px 5px 5px;
+}
+.presentacion p {
+  line-height: 19px;
+}
+
+.iconos-ecografias {
+  flex-direction: column;
+  gap: 15px;
+  padding: 20px;
+  margin: 20px;
+}
+.iconos-ecografias img {
+  width: 70px;
+}
+
+/* FOOTER */
+footer {
+  font-family: "Philosopher", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+footer .footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding: 20px;
+  background-color: #aaf3d4;
+  color: black;
+  flex-wrap: wrap;
+  width: 100%;
+}
+footer .footer .frase-pie {
+  flex: 1;
+  text-align: left;
+  padding-right: 20px;
+}
+
+.social {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 5px;
+}
+.social .social h4 {
+  margin: 0;
+  font-size: 18px;
+}
+.social .social h4 .social-iconos {
+  display: flex;
+  gap: 10px;
+}
+.social .social h4 .social-iconos .social-iconos a {
+  display: block;
+  text-decoration: none;
+  color: inherit;
+}
+.social .social h4 .social-iconos .social-iconos a .social-iconos i {
+  height: 30px;
+  width: 30px;
+  line-height: normal;
+  border-radius: 50%;
+  background-color: #83ecbb;
+  color: black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 16px;
+  margin: 0;
+}
+.social .social h4 .social-iconos .social-iconos a .social-iconos i .social-iconos i:hover {
+  background-color: #489CC1;
+}
+
+/*# sourceMappingURL=estilos.css.map */

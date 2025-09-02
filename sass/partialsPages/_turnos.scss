@@ -1,0 +1,99 @@
+@use "../partialsGenerales/variables" as c;
+
+p{
+    font-family: c.$font;
+    font-weight: 400;
+    font-style: normal;
+}
+
+main{
+    text-align: center;
+    main li{
+        list-style: none;
+    }
+}
+
+.turnos label{
+    font-family: "Philosopher", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.turnos input{
+    font-family: "Philosopher", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+/* formulario de registro */
+
+.registro-usuario{
+    border: 2px solid #489CC1;
+    border-radius: 12px;
+    padding: 25px 30px;
+    max-width: 500px;
+    margin: 30px auto;
+    background-color: #f9f9f9;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    font-family: "Philosopher", sans-serif;
+}
+
+.registro-usuario h2{
+    text-align: center;
+    margin-bottom: 20px;
+    color: #489CC1;
+}
+
+/* formulario */
+.registro-usuario form{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+/* datos personales y selección de ecografía */
+.datos-personales,
+.tipo-ecografia{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.datos-personales label,
+.tipo-ecografia label{
+    font-weight: 600;
+}
+
+/* inputs y textarea */
+.registro-usuario input,
+.registro-usuario select,
+.registro-usuario textarea{
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font-size: 14px;
+}
+
+.registro-usuario input:focus,
+.registro-usuario select:focus,
+.registro-usuario textarea:focus{
+    border-color: #489CC1;
+    outline: none;
+    box-shadow: 0 0 5px rgba(72,156,193,0.4);
+}
+
+/* botón de envío */
+.boton-enviar .boton{
+    background-color: #489CC1;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    padding: 12px;
+    cursor: pointer;
+    font-weight: 600;
+    transition: background 0.3s ease;
+}
+
+.boton-enviar .boton:hover{
+    background-color: #338ebf;
+}

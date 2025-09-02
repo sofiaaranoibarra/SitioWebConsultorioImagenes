@@ -1,0 +1,128 @@
+@use "../partialsGenerales/variables" as c;
+
+/* responsive */
+
+/* mobile */
+@media (max-width:480px){
+   
+    body{
+        background-color: rgb(255, 255, 255);
+    }
+
+    header{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+        padding: 10px 0;
+    }
+
+    header img{
+        margin: 0 auto;
+    }
+
+    .navegacion ul{
+        flex-direction: row;
+        justify-content: center;
+        gap: 10px;
+        width: auto;
+    }
+
+    .navegacion li a{
+        padding: 6px 10px;
+    }
+
+    .foto-presentacion{
+        width: 100%;
+    }
+
+    .presentacion{
+        width: 100%;
+        margin: 0;
+        padding: 5px 5px 5px 5px;
+            p{
+                line-height: 19px;
+            }
+        }
+
+    .iconos-ecografias{
+    flex-direction: column;
+    gap: 15px;
+    padding: 20px;
+    margin: 20px;
+        img{
+            width: 70px;
+        }
+    }
+  
+    /* contenedor grid */
+
+    .contenedor{
+        grid-template-areas: 
+        "titulo"
+        "subtitulo1"
+        "texto1"
+        "foto1"
+        "subtitulo2"
+        "texto2"
+        "texto2"
+        "foto2"
+        "subtitulo3"
+        "texto3"
+        "foto3";
+        grid-template-columns: 1fr;
+        grid-template-rows: 60px repeat(6, auto);
+        column-gap: none;
+        row-gap: 25px;
+        padding: 15px;
+        margin-bottom: 40px;
+    }
+
+    .contenedor img{
+        width: 100%;
+        height: auto;
+        object-fit: cover;
+        border-radius: 6px;
+        margin: 10px 0;
+    }
+    
+    /* ubicacion y formulario */
+
+    .ubicacion-formulario{
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+    }
+
+    .ubicacion-caja,
+    .formulario{
+        flex: none;
+        width: 90%;
+        max-width: 400px;
+        margin: 0 auto;
+    }
+
+    /* formulario de registro */
+
+    .registro-usuario{
+        width: 90%;
+        padding: 20px;
+    }
+}
+
+/* tablet */
+
+@media (min-width: 481px) and (max-width: 978px) {
+    body{
+        background-color: #ffffff;
+    }
+
+}
+
+/* desktop */
+
+@media (min-width: 979px) {
+    body{
+        background-color: #ffffff;
+    }
+}
