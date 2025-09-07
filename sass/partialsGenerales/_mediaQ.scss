@@ -1,3 +1,4 @@
+/* variable */
 @use "../partialsGenerales/variables" as c;
 
 /* responsive */
@@ -6,7 +7,7 @@
 @media (max-width:480px){
    
     body{
-        background-color: rgb(255, 255, 255);
+        background-color: c.$blanco;
     }
 
     header{
@@ -102,6 +103,10 @@
         margin: 0 auto;
     }
 
+    .ubicacion-caja iframe{
+        max-width: 100%;
+    }
+
     /* formulario de registro */
 
     .registro-usuario{
@@ -110,19 +115,227 @@
     }
 }
 
+/* boton registro */
+
+    .boton-r a{
+        width: 140px;
+        height: 45px;
+
+        span{
+            font-size: 14px;
+            letter-spacing: 1px;
+        }
+    }
+
+/* footer */
+
+footer{
+    &:hover i{
+        background-color: c.$celeteoscuro;
+        color: c.$blanco;
+    }
+}
+
 /* tablet */
 
 @media (min-width: 481px) and (max-width: 978px) {
     body{
-        background-color: #ffffff;
+        background-color: c.$blanco;
     }
 
-}
+    /* header */
 
-/* desktop */
+    header{
+    padding: 8px 15px;
+    flex-direction: row;
+    justify-content: space-between;
 
-@media (min-width: 979px) {
+        .navbar-brand img{
+            width: 35px;
+            margin-left: 10px;
+        }
+
+        .navbar-nav{
+            .nav-link{
+                font-size: 14px;
+            }
+        }
+    }
+
+    /* index */
+
     body{
-        background-color: #ffffff;
+        font-family: c.$font;
+        font-weight: 400;
+        font-style: normal;
+        margin: 0;
+        padding-top: 70px;
+    }
+
+    h1{
+        color: c.$celeteoscuro;
+        font-family: c.$font;
+        font-weight: 700;
+        font-style: normal;
+        font-size: 28px;
+        text-align: center;
+    }
+
+    h2{
+        font-family: c.$font;
+        font-weight: 700;
+        font-style: normal;
+        font-size: 22px;
+    }
+
+    main{
+        text-align: center;
+        margin-top: 0 !important;
+        padding-top: 0 !important;
+
+        li {
+            list-style: none;
+        }
+    }
+
+    /* sección presentación */
+
+    .presentacion{
+        max-width: 90%;
+        height: auto;
+        padding: 30px 20px;
+        margin: 0 auto;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 15px;
+    }
+
+    .presentacion p{
+        text-align: center;
+        line-height: 22px;
+        font-size: 16px;
+    }
+
+    /* iconos ecografías */
+    .iconos-ecografias{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 20px;
+        margin: 20px auto;
+        padding: 20px;
+        border: 2px solid c.$celeteoscuro;
+        border-radius: 10px;
+        background-color: #f0f9f7;
+        box-shadow: 0 4px 10px c.$negro;
+        max-width: 90%;
+        width: 100%;
+    }
+
+    .iconos-ecografias img{
+        width: 150px;
+        height: auto;
+    }
+
+     /* carrusel */
+    .carousel{
+        max-width: 700px;
+        margin: 0 auto;
+    }
+
+    .carousel img {
+        border-radius: 12px;
+        object-fit: cover;
+    }
+
+    /* contenedor de ecografias */
+
+    .contenedor{
+        display: grid;
+        grid-template-areas: 
+        "titulo"
+        "subtitulo1"
+        "texto1"
+        "foto1"
+        "subtitulo2"
+        "texto2"
+        "foto2"
+        "subtitulo3"
+        "texto3"
+        "foto3";
+    
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+    row-gap: 20px;
+    column-gap: 0;
+    justify-items: center;
+    align-items: start;
+    margin: 0 auto;
+    max-width: 90%;
+  }
+
+  /* subtítulos y párrafos alineados */
+    .contenedor h2,
+    .contenedor p{
+        text-align: center;
+        margin: 5px 0;
+    }
+
+    .contenedor img{
+        max-width: 250px;
+        width: 100%;
+        height: auto;
+        margin: 10px auto;
+        display: block;
+    }
+
+    /* ubicacion y formulario */
+    .ubicacion-formulario{
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+
+        .ubicacion-caja,
+        .formulario{
+            max-width: 600px;
+            width: 100%;
+        }
+
+        iframe{
+            height: 250px;
+        }
+    }
+
+    .boton-r a{
+        width: 160px;
+        height: 50px;
+        
+        span{
+            font-size: 15px;
+        }
+    }
+
+    /* footer */
+    footer .footer{
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        gap: 15px;
+
+        .frase-pie{
+            justify-content: center;
+            padding-left: 0;
+
+            p {
+                text-align: center;
+            }
+        }
+
+        .social{
+            flex-direction: row;
+            justify-content: center;
+            gap: 15px;
+        }
     }
 }

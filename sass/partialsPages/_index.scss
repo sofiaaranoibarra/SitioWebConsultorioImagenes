@@ -1,9 +1,15 @@
+/* variable */
 @use "../partialsGenerales/variables" as c;
+
 
 /* main */
 
 body{
-    padding-top: 90px;
+    font-family: c.$font;
+    font-weight: 400;
+    font-style: normal;
+    margin: 0;
+    padding-top:60px;
 }
 
 h1{
@@ -21,6 +27,8 @@ h2{
 
 main{
     text-align: center;
+    margin-top: 0 !important;
+    padding-top: 0 !important;
     main li{
         list-style: none;
     }
@@ -33,12 +41,12 @@ main{
     margin: 0 auto;
     border: 20px;
     display: flex;
+    p{
+        text-align: center;
+        line-height: 25px;
+    }
 }
-   
-.presentacion p{
-    text-align: center;
-    line-height: 25px;
- }
+
 
 .iconos-ecografias{
     display: flex;
@@ -46,28 +54,60 @@ main{
     align-items: center;
     margin: 20px auto;
     padding: 20px;
-    border: 2px solid #489CC1;
+    border: 2px solid c.$celeteoscuro;
     border-radius: 10px;
     background-color: #f0f9f7;
-    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    box-shadow: 0 4px 10px c.$negro;
     text-align: center;
     max-width: 1000px;
     width: 90%;
-}
+    gap: 20px;
+    flex-wrap: wrap;
 
-.iconos-ecografias img{
-    width: 200px;
+    .icono-card{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-decoration: none;
+        color: c.$negro;
+        transition: transform 0.2s ease, box-shadow 0.2s ease;
+        border-radius: 8px;
+        padding: 10px;
+
+        img{
+            width: 180px;
+            max-width: 100%;
+            border-radius: 6px;
+        }
+
+        p{
+            margin-top: 10px;
+            font-weight: 600;
+        }
+
+        /* Hover efecto */
+        &:hover {
+            transform: scale(1.05);
+            box-shadow: 0 6px 15px rgba(72, 156, 193, 0.4);
+        }
+
+        /* Click efecto */
+        &:active {
+            transform: scale(0.95);
+            box-shadow: 0 3px 8px rgba(72, 156, 193, 0.6);
+        }
+    }
 }
 
 .carousel{
     max-width: 900px;
     margin: 0 auto;
+    img{
+        border-radius: 12px;
+        object-fit: cover;
+    }
 }
 
-.carousel img{
-    border-radius: 12px;
-    object-fit: cover;
-}
 
 
 

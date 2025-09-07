@@ -1,34 +1,12 @@
+/* variable */
 @use "../partialsGenerales/variables" as c;
-
-/* header */
-
-header{
-    color: c.$negro;
-    padding: 10px 20px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    flex-wrap: wrap;
-    img{
-        width: 40px;
-        margin-left: 40px;
-    }
-}
-
-
-.navbar-nav .nav-link.active, .navbar-nav .nav-link.show{
-  color:#338ebf;
-  font-weight: bold;
-}
- 
 
 /* footer */
 
-footer{
+.footer{
     font-family: c.$font;
     font-weight: 400;
     font-style: normal;
-    .footer{
     display: flex;
     justify-content: space-between;
     align-items: flex-start;
@@ -37,17 +15,18 @@ footer{
     color: c.$negro;
     flex-wrap: wrap;
     width: 100%;
-        .frase-pie{
-            flex: 1;
-            text-align: left;
-            padding-right: 20px;
-            p{
-                font-family: c.$font;
-                font-weight: 400;
-                font-style: normal;
-            }
+    .frase-pie{
+        flex: 1;
+        text-align: left;
+        padding-right: 20px;
+        p{
+            font-family: c.$font;
+            font-weight: 400;
+            font-style: normal;
+            margin-top: 20px;
         }
     }
+
 }
 
 .social{
@@ -79,8 +58,9 @@ footer{
                 font-size: 16px;
                 margin: 0;
             }
-                &:hover{
+                &:hover i{
                     background-color: c.$celeteoscuro;
+                    color: c.$blanco;
                 }
         }      
     }    

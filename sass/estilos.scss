@@ -1,6 +1,10 @@
 /* variables */
 
-@use "./partialsGenerales/variables";
+@use "./partialsGenerales/variables" as c;
+
+/* header */
+
+@use "./partialsGenerales/header";
 
 /* pages html */
 
@@ -9,10 +13,10 @@
 @use "./partialsPages/turnos";
 @use "./partialsPages/contacto";
 
-/* header y footer */
+/* footer */
 
-@use "./partialsGenerales/headerFooter";
+@use "./partialsGenerales/footer";
 
 /* mediaQ */
 
-@use "./partialsGenerales/mediaQueries";
+@use "./partialsGenerales/mediaQ";

@@ -1,0 +1,36 @@
+/* variable */
+@use "../partialsGenerales/variables" as c;
+
+/* header */
+
+header{
+    color: c.$negro;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    
+    border: none;
+    margin: 0;
+    box-shadow: none;
+}
+
+.navbar{
+  margin: 0 !important;
+  padding: 0 !important;
+  border-bottom: none !important;
+  box-shadow: none !important; 
+}
+
+.navbar-nav .nav-link.active, .navbar-nav .nav-link.show{
+  color:#338ebf;
+  font-weight: bold;
+}
+
+.navbar-brand{
+    img{
+        width: 40px;
+        margin-left: 40px;
+    }
+}
