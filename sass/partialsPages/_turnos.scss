@@ -1,7 +1,7 @@
 /* variable */
 @use "../partialsGenerales/variables" as c;
 
-
+/* fuente */
 p{
     font-family: c.$font;
     font-weight: 400;
@@ -93,6 +93,8 @@ main{
     a{
         position: relative;
         display: inline-block;
+        width: 180px;
+        height: 55px;
         padding: 3px;
         border-radius: 10px;
         text-decoration: none;

@@ -4,16 +4,16 @@
 /* header */
 
 header{
-    color: c.$negro;
-    padding: 10px 20px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    flex-wrap: wrap;
-    
-    border: none;
-    margin: 0;
-    box-shadow: none;
+  color: c.$negro;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  margin: 0;
+  padding: 10px 20px;
+  border: none;
+  box-shadow: none;
+  background-color: c.$blanco;
 }
 
 .navbar{
@@ -28,9 +28,8 @@ header{
   font-weight: bold;
 }
 
-.navbar-brand{
-    img{
-        width: 40px;
-        margin-left: 40px;
-    }
+.navbar-brand img{
+  max-width: 40px;
+  height: auto;
+  margin-left: 20px;
 }

@@ -12,41 +12,80 @@ body{
     padding-top:60px;
 }
 
-h1{
-    color: c.$celeteoscuro;
+h1, h2{
     font-family: c.$font;
     font-weight: 700;
     font-style: normal;
+    margin: 0;
+}
+
+h1{
+    color: c.$celeteoscuro;
 }
 
 h2{
-    font-family: c.$font;
-    font-weight: 700;
-    font-style: normal;
+    color: c.$negro;
 }
 
 main{
     text-align: center;
-    margin-top: 0 !important;
-    padding-top: 0 !important;
-    main li{
+
+    li{
         list-style: none;
     }
 }
 
 .presentacion{
-    width: 1100px;
+    max-width: 1100px;
+    width: 90%;
     height: 200px;
-    padding: 50px 50px;
+    padding: 50px;
     margin: 0 auto;
-    border: 20px;
     display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     p{
         text-align: center;
         line-height: 25px;
     }
 }
 
+/* mixin tipos ecografias */
+
+@mixin card-style{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-decoration: none;
+    color: c.$negro;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+    border-radius: 8px;
+    padding: 10px;
+
+    img{
+        width: 180px;
+        max-width: 100%;
+        border-radius: 6px;
+    }
+
+    p{
+        margin-top: 10px;
+        font-weight: 600;
+    }
+
+    &:hover{
+        transform: scale(1.05);
+        box-shadow: 0 6px 15px rgba(72, 156, 193, 0.4);
+    }
+
+    &:active{
+        transform: scale(0.95);
+        box-shadow: 0 3px 8px rgba(72, 156, 193, 0.6);
+    }
+}
+
+/* Sección de iconos */
 
 .iconos-ecografias{
     display: flex;
@@ -65,37 +104,7 @@ main{
     flex-wrap: wrap;
 
     .icono-card{
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        text-decoration: none;
-        color: c.$negro;
-        transition: transform 0.2s ease, box-shadow 0.2s ease;
-        border-radius: 8px;
-        padding: 10px;
-
-        img{
-            width: 180px;
-            max-width: 100%;
-            border-radius: 6px;
-        }
-
-        p{
-            margin-top: 10px;
-            font-weight: 600;
-        }
-
-        /* Hover efecto */
-        &:hover {
-            transform: scale(1.05);
-            box-shadow: 0 6px 15px rgba(72, 156, 193, 0.4);
-        }
-
-        /* Click efecto */
-        &:active {
-            transform: scale(0.95);
-            box-shadow: 0 3px 8px rgba(72, 156, 193, 0.6);
-        }
+        @include card-style;
     }
 }
 
