@@ -40,16 +40,16 @@ main{
     justify-content: center;
     margin-bottom: 0;
     padding-bottom: 60px;
-}
 
-.contenedor img{
-    width: 100%;
-    height: auto;
-    max-width: 250px;
-    object-fit: cover;
-    box-shadow: 13px -9px 13px -3px rgba(0,0,0,0.87);
-    border-radius: 6px;
-    margin: 10px 0;
+    img{
+        width: 100%;
+        height: auto;
+        max-width: 250px;
+        object-fit: cover;
+        box-shadow: 13px -9px 13px -3px rgba(0,0,0,0.87);
+        border-radius: 6px;
+        margin: 10px 0;
+    }
 }
 
 .titulo{

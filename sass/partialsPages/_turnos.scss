@@ -5,7 +5,6 @@
 
 @use "../partialsGenerales/extend";
 
-/* fuente */
 p{
     font-family: c.$font;
     font-weight: 400;
@@ -19,16 +18,13 @@ main{
     }
 }
 
-.turnos label{
-    font-family: c.$font;
-    font-weight: 400;
-    font-style: normal;
-}
-
-.turnos input{
-    font-family: c.$font;
-    font-weight: 400;
-    font-style: normal;
+.turnos{
+    label,
+    input{
+        font-family: c.$font;
+        font-weight: 400;
+        font-style: normal;
+    }
 }
 
 /* formulario de registro */
@@ -42,19 +38,35 @@ main{
     background-color: c.$blanco;
     box-shadow: 0 4px 12px c.$negro;
     font-family: c.$font;
-}
 
-.registro-usuario h2{
-    text-align: center;
-    margin-bottom: 20px;
-    color: c.$celeteoscuro;
-}
+    h2{
+        text-align: center;
+        margin-bottom: 20px;
+        color: c.$celeteoscuro;
+    }
 
-/* formulario */
-.registro-usuario form{
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
+    form{
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
+
+  /* inputs y textarea */
+
+    input,
+    select,
+    textarea{
+        padding: 10px;
+        border: 1px solid #ccc;
+        border-radius: 8px;
+        font-size: 14px;
+
+        &:focus{
+            border-color: c.$celeteoscuro;
+            outline: none;
+            box-shadow: 0 0 5px rgba(72,156,193,0.4);
+        }
+    }
 }
 
 /* datos personales y selección de ecografía */
@@ -63,35 +75,17 @@ main{
     display: flex;
     flex-direction: column;
     gap: 10px;
-}
 
-.datos-personales label,
-.tipo-ecografia label{
-    font-weight: 600;
-}
-
-/* inputs y textarea */
-.registro-usuario input,
-.registro-usuario select,
-.registro-usuario textarea{
-    padding: 10px;
-    border: 1px solid #ccc;
-    border-radius: 8px;
-    font-size: 14px;
-}
-
-.registro-usuario input:focus,
-.registro-usuario select:focus,
-.registro-usuario textarea:focus{
-    border-color: c.$celeteoscuro;
-    outline: none;
-    box-shadow: 0 0 5px rgba(72,156,193,0.4);
+    label{
+        font-weight: 600;
+    }
 }
 
 /* botón de registro */
 :root{
     --x: 45deg;
 }
+
 .boton-r{
     @extend .boton;
 }

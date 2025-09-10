@@ -13,28 +13,28 @@ body{
     font-style: normal;
     margin: 0;
     padding-top:60px;
-}
 
-h1, h2{
-    font-family: c.$font;
-    font-weight: 700;
-    font-style: normal;
-    margin: 0;
-}
+    h1, h2{
+        font-family: c.$font;
+        font-weight: 700;
+        font-style: normal;
+        margin: 0;
+    }
 
-h1{
-    color: c.$celeteoscuro;
-}
+    h1{
+        color: c.$celeteoscuro;
+    }
 
-h2{
-    color: c.$negro;
-}
+    h2{
+        color: c.$negro;
+    }
 
-main{
-    text-align: center;
+    main{
+        text-align: center;
 
-    li{
-        list-style: none;
+        li{
+            list-style: none;
+        }
     }
 }
 

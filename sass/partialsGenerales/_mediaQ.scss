@@ -16,16 +16,18 @@
 
     header{
         padding: 8px 15px;
-    }
+    
+        .navbar-brand{
+            img{
+                max-width: 40px;
+                margin-left: 0;
+            }
+        }
 
-    .navbar-brand img{
-        max-width: 40px;
-        margin-left: 0;
-    }
-
-    .navbar-nav{
-        text-align: center;
-        width: 100%;
+        .navbar-nav{
+            text-align: center;
+            width: 100%;
+        }
     }
 
     /* index */
@@ -47,9 +49,11 @@
         width: 100%;
     }
 
-    main h2{
-        margin-top: 20px;
-        font-size: 18px;
+    main{
+        h2{
+            margin-top: 20px;
+            font-size: 18px;
+        }
     }
 
     .iconos-ecografias{
@@ -86,14 +90,14 @@
         row-gap: 25px;
         padding: 15px;
         margin-bottom: 40px;
-    }
 
-    .contenedor img{
-        width: 100%;
-        height: auto;
-        object-fit: cover;
-        border-radius: 6px;
-        margin: 10px 0;
+        img{
+            width: 100%;
+            height: auto;
+            object-fit: cover;
+            border-radius: 6px;
+            margin: 10px 0;
+        }
     }
     
     /* ubicacion y formulario */
@@ -112,8 +116,10 @@
         margin: 0 auto;
     }
 
-    .ubicacion-caja iframe{
-        max-width: 100%;
+    .ubicacion-caja{
+        iframe{
+            max-width: 100%;
+        }
     }
 
     /* formulario de registro */
@@ -150,32 +156,29 @@
 @media (min-width: 481px) and (max-width: 978px){
     body{
         background-color: c.$blanco;
-    }
-
-    /* header */
-
-    header{
-        padding: 10px 20px;
-    }
-
-    .navbar-brand img{
-        max-width: 50px;
-        margin-left: 10px;
-    }
-
-    .navbar-nav{
-        gap: 15px;
-    }
-
-    /* index */
-    
-    body{
         font-family: c.$font;
         font-weight: 400;
         font-style: normal;
         margin: 0;
         padding-top: 70px;
     }
+
+    /* header */
+
+    header{
+        padding: 10px 20px;
+
+        .navbar-brand img{
+            max-width: 50px;
+            margin-left: 10px;
+        }
+
+        .navbar-nav{
+            gap: 15px;
+        }
+    }
+
+    /* index */
 
     h1{
         color: c.$celeteoscuro;
@@ -193,9 +196,11 @@
         font-size: 22px;
     }
 
-     main h2{
-        margin-top: 20px;
-        font-size: 18px;
+    main {
+        h2{
+            margin-top: 20px;
+            font-size: 18px;
+        }
     }
 
     /* sección presentación */
@@ -246,21 +251,21 @@
     align-items: start;
     margin: 0 auto;
     max-width: 90%;
-  }
 
-  /* subtítulos y párrafos alineados */
-    .contenedor h2,
-    .contenedor p{
-        text-align: center;
-        margin: 5px 0;
-    }
+        /* subtítulos y párrafos alineados */
+        h2,
+        p{
+            text-align: center;
+            margin: 5px 0;
+        }
 
-    .contenedor img{
-        max-width: 250px;
-        width: 100%;
-        height: auto;
-        margin: 10px auto;
-        display: block;
+        img{
+            max-width: 250px;
+            width: 100%;
+            height: auto;
+            margin: 10px auto;
+            display: block;
+        }
     }
 
     /* ubicacion y formulario */
@@ -280,35 +285,39 @@
         }
     }
 
-    .boton-r a{
-        width: 160px;
-        height: 50px;
+    .boton-r{
+        a{
+            width: 160px;
+            height: 50px;
 
-        span{
-            font-size: 15px;
+            span{
+                font-size: 15px;
+            }
         }
     }
 
     /* footer */
-    footer .footer{
-        flex-direction: column;
-        align-items: center;
-        text-align: center;
-        gap: 15px;
-
-        .frase-pie{
-            justify-content: center;
-            padding-left: 0;
-
-            p {
-                text-align: center;
-            }
-        }
-
-        .social{
-            flex-direction: row;
-            justify-content: center;
+    footer {
+        .footer{
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
             gap: 15px;
+
+            .frase-pie{
+                justify-content: center;
+                padding-left: 0;
+
+                p {
+                    text-align: center;
+                }
+            }
+
+            .social{
+                flex-direction: row;
+                justify-content: center;
+                gap: 15px;
+            }
         }
     }
 }

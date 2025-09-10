@@ -49,26 +49,22 @@ body {
   margin: 0;
   padding-top: 60px;
 }
-
-h1, h2 {
+body h1, body h2 {
   font-family: "Philosopher", sans-serif;
   font-weight: 700;
   font-style: normal;
   margin: 0;
 }
-
-h1 {
+body h1 {
   color: #489CC1;
 }
-
-h2 {
+body h2 {
   color: #000000;
 }
-
-main {
+body main {
   text-align: center;
 }
-main li {
+body main li {
   list-style: none;
 }
 
@@ -176,7 +172,6 @@ main li {
   margin-bottom: 0;
   padding-bottom: 60px;
 }
-
 .contenedor img {
   width: 100%;
   height: auto;
@@ -285,7 +280,6 @@ main li {
     left: 150%;
   }
 }
-/* fuente */
 p {
   font-family: "Philosopher", sans-serif;
   font-weight: 400;
@@ -299,12 +293,7 @@ main main li {
   list-style: none;
 }
 
-.turnos label {
-  font-family: "Philosopher", sans-serif;
-  font-weight: 400;
-  font-style: normal;
-}
-
+.turnos label,
 .turnos input {
   font-family: "Philosopher", sans-serif;
   font-weight: 400;
@@ -321,19 +310,32 @@ main main li {
   background-color: #ffffff;
   box-shadow: 0 4px 12px #000000;
   font-family: "Philosopher", sans-serif;
+  /* inputs y textarea */
 }
-
 .registro-usuario h2 {
   text-align: center;
   margin-bottom: 20px;
   color: #489CC1;
 }
-
-/* formulario */
 .registro-usuario form {
   display: flex;
   flex-direction: column;
   gap: 20px;
+}
+.registro-usuario input,
+.registro-usuario select,
+.registro-usuario textarea {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 14px;
+}
+.registro-usuario input:focus,
+.registro-usuario select:focus,
+.registro-usuario textarea:focus {
+  border-color: #489CC1;
+  outline: none;
+  box-shadow: 0 0 5px rgba(72, 156, 193, 0.4);
 }
 
 /* datos personales y selección de ecografía */
@@ -343,28 +345,9 @@ main main li {
   flex-direction: column;
   gap: 10px;
 }
-
 .datos-personales label,
 .tipo-ecografia label {
   font-weight: 600;
-}
-
-/* inputs y textarea */
-.registro-usuario input,
-.registro-usuario select,
-.registro-usuario textarea {
-  padding: 10px;
-  border: 1px solid #ccc;
-  border-radius: 8px;
-  font-size: 14px;
-}
-
-.registro-usuario input:focus,
-.registro-usuario select:focus,
-.registro-usuario textarea:focus {
-  border-color: #489CC1;
-  outline: none;
-  box-shadow: 0 0 5px rgba(72, 156, 193, 0.4);
 }
 
 /* botón de registro */
@@ -561,11 +544,11 @@ main li {
   header {
     padding: 8px 15px;
   }
-  .navbar-brand img {
+  header .navbar-brand img {
     max-width: 40px;
     margin-left: 0;
   }
-  .navbar-nav {
+  header .navbar-nav {
     text-align: center;
     width: 100%;
   }
@@ -679,26 +662,24 @@ main li {
 @media (min-width: 481px) and (max-width: 978px) {
   body {
     background-color: #ffffff;
-  }
-  /* header */
-  header {
-    padding: 10px 20px;
-  }
-  .navbar-brand img {
-    max-width: 50px;
-    margin-left: 10px;
-  }
-  .navbar-nav {
-    gap: 15px;
-  }
-  /* index */
-  body {
     font-family: "Philosopher", sans-serif;
     font-weight: 400;
     font-style: normal;
     margin: 0;
     padding-top: 70px;
   }
+  /* header */
+  header {
+    padding: 10px 20px;
+  }
+  header .navbar-brand img {
+    max-width: 50px;
+    margin-left: 10px;
+  }
+  header .navbar-nav {
+    gap: 15px;
+  }
+  /* index */
   h1 {
     color: #489CC1;
     font-family: "Philosopher", sans-serif;
@@ -770,8 +751,8 @@ main li {
     align-items: start;
     margin: 0 auto;
     max-width: 90%;
+    /* subtítulos y párrafos alineados */
   }
-  /* subtítulos y párrafos alineados */
   .contenedor h2,
   .contenedor p {
     text-align: center;
