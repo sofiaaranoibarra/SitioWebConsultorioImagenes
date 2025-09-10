@@ -2,43 +2,9 @@
 
 @use "../partialsGenerales/variables" as c;
 
-/* tarjeta reutilizable */
-
-@mixin card-style($size){
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  text-decoration: none;
-  color: c.$negro;
-  transition: transform 0.2s ease, box-shadow 0.2s ease;
-  border-radius: 8px;
-  padding: 10px;
-
-  img{
-    width: $size;
-    max-width: 100%;
-    border-radius: 6px;
-  }
-
-  p{
-    margin-top: 10px;
-    font-weight: 600;
-  }
-
-  &:hover{
-    transform: scale(1.05);
-    box-shadow: 0 6px 15px rgba(72, 156, 193, 0.4);
-  }
-
-  &:active{
-    transform: scale(0.95);
-    box-shadow: 0 3px 8px rgba(72, 156, 193, 0.6);
-  }
-}
-
 /* botón reutilizable */
 
-@mixin boton{
+.boton{
   a{
     position: relative;
     display: inline-block;

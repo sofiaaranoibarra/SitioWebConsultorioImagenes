@@ -3,7 +3,7 @@
 
 /* mixin */
 
-@use "../partialsGenerales/mixins" as m;
+@use "../partialsGenerales/mixin" as m;
 
 /* main */
 
@@ -80,6 +80,9 @@ main{
 .carousel{
     max-width: 900px;
     margin: 0 auto;
+    h2{
+        color: #41fba5;
+    }
     img{
         border-radius: 12px;
         object-fit: cover;

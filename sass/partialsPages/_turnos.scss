@@ -3,7 +3,7 @@
 
 /* mixin */
 
-@use "../partialsGenerales/mixins" as m;
+@use "../partialsGenerales/extend";
 
 /* fuente */
 p{
@@ -93,5 +93,5 @@ main{
     --x: 45deg;
 }
 .boton-r{
-    @include m.boton;
+    @extend .boton;
 }
