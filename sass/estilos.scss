@@ -6,6 +6,10 @@
 
 @use "./partialsGenerales/header";
 
+/* mixins */
+
+@use "./partialsGenerales/mixins";
+
 /* pages html */
 
 @use "./partialsPages/index";

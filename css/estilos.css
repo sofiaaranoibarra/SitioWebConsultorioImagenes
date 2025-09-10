@@ -34,8 +34,22 @@ header {
   margin-left: 20px;
 }
 
-/* pages html */
+/* mixins */
 /* variable */
+/* tarjeta reutilizable */
+/* botón reutilizable */
+@keyframes shine {
+  0% {
+    left: -100%;
+  }
+  100% {
+    left: 150%;
+  }
+}
+/* pages html */
+/* mixins */
+/* variable */
+/* mixin */
 /* main */
 body {
   font-family: "Philosopher", sans-serif;
@@ -83,8 +97,7 @@ main li {
   line-height: 25px;
 }
 
-/* mixin tipos ecografias */
-/* Sección de iconos */
+/* sección de iconos */
 .iconos-ecografias {
   display: flex;
   justify-content: space-evenly;
@@ -101,7 +114,7 @@ main li {
   gap: 20px;
   flex-wrap: wrap;
 }
-.iconos-ecografias .icono-card {
+.iconos-ecografias .icono-tarjeta {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -111,20 +124,20 @@ main li {
   border-radius: 8px;
   padding: 10px;
 }
-.iconos-ecografias .icono-card img {
+.iconos-ecografias .icono-tarjeta img {
   width: 180px;
   max-width: 100%;
   border-radius: 6px;
 }
-.iconos-ecografias .icono-card p {
+.iconos-ecografias .icono-tarjeta p {
   margin-top: 10px;
   font-weight: 600;
 }
-.iconos-ecografias .icono-card:hover {
+.iconos-ecografias .icono-tarjeta:hover {
   transform: scale(1.05);
   box-shadow: 0 6px 15px rgba(72, 156, 193, 0.4);
 }
-.iconos-ecografias .icono-card:active {
+.iconos-ecografias .icono-tarjeta:active {
   transform: scale(0.95);
   box-shadow: 0 3px 8px rgba(72, 156, 193, 0.6);
 }
@@ -220,7 +233,9 @@ main li {
   grid-area: foto3;
 }
 
+/* mixins */
 /* variable */
+/* mixin */
 /* fuente */
 p {
   font-family: "Philosopher", sans-serif;
@@ -333,7 +348,7 @@ main main li {
   font-weight: bold;
   font-size: 16px;
   letter-spacing: 2px;
-  color: #000;
+  color: #000000;
   position: relative;
   overflow: hidden;
 }
@@ -354,15 +369,9 @@ main main li {
   box-shadow: 0 8px 16px rgba(72, 156, 193, 0.6);
 }
 
-@keyframes shine {
-  0% {
-    left: -100%;
-  }
-  100% {
-    left: 150%;
-  }
-}
-/* Variables */
+/* mixins */
+/* variables */
+/* mixin */
 /* fuente */
 p {
   font-family: "Philosopher", sans-serif;
@@ -495,7 +504,7 @@ main li {
   font-weight: bold;
   font-size: 16px;
   letter-spacing: 2px;
-  color: #000;
+  color: #000000;
   position: relative;
   overflow: hidden;
 }
@@ -516,14 +525,6 @@ main li {
   box-shadow: 0 8px 16px rgba(72, 156, 193, 0.6);
 }
 
-@keyframes shine {
-  0% {
-    left: -100%;
-  }
-  100% {
-    left: 150%;
-  }
-}
 /* footer */
 /* variable */
 /* footer */
@@ -590,7 +591,9 @@ main li {
 }
 
 /* mediaQ */
+/* mixins */
 /* variable */
+/* mixin */
 /* responsive */
 /* mobile */
 @media (max-width: 480px) {
@@ -628,20 +631,35 @@ main li {
     font-size: 18px;
   }
   .iconos-ecografias {
-    flex-direction: column;
-    align-items: center;
-    padding: 15px;
+    justify-content: center;
     gap: 15px;
   }
-  .icono-card {
-    width: 100%;
-    max-width: 280px;
+  .iconos-ecografias .icono-tarjeta {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-decoration: none;
+    color: #000000;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+    border-radius: 8px;
+    padding: 10px;
   }
-  .icono-card img {
-    width: 50px;
+  .iconos-ecografias .icono-tarjeta img {
+    width: 70px;
+    max-width: 100%;
+    border-radius: 6px;
   }
-  .icono-card p {
-    font-size: 14px;
+  .iconos-ecografias .icono-tarjeta p {
+    margin-top: 10px;
+    font-weight: 600;
+  }
+  .iconos-ecografias .icono-tarjeta:hover {
+    transform: scale(1.05);
+    box-shadow: 0 6px 15px rgba(72, 156, 193, 0.4);
+  }
+  .iconos-ecografias .icono-tarjeta:active {
+    transform: scale(0.95);
+    box-shadow: 0 3px 8px rgba(72, 156, 193, 0.6);
   }
   .carousel {
     max-width: 95%;
@@ -737,13 +755,9 @@ main li {
     font-style: normal;
     font-size: 22px;
   }
-  main {
-    text-align: center;
-    margin-top: 0 !important;
-    padding-top: 0 !important;
-  }
-  main li {
-    list-style: none;
+  main h2 {
+    margin-top: 20px;
+    font-size: 18px;
   }
   /* sección presentación */
   .presentacion {
@@ -754,17 +768,33 @@ main li {
   .iconos-ecografias {
     justify-content: center;
     gap: 25px;
-    padding: 20px;
   }
-  .iconos-ecografias .icono-card {
-    flex: 1 1 calc(45% - 20px);
-    max-width: 250px;
+  .iconos-ecografias .icono-tarjeta {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-decoration: none;
+    color: #000000;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+    border-radius: 8px;
+    padding: 10px;
   }
-  .iconos-ecografias .icono-card img {
-    width: 150px;
+  .iconos-ecografias .icono-tarjeta img {
+    width: 100px;
+    max-width: 100%;
+    border-radius: 6px;
   }
-  .iconos-ecografias .icono-card p {
-    font-size: 15px;
+  .iconos-ecografias .icono-tarjeta p {
+    margin-top: 10px;
+    font-weight: 600;
+  }
+  .iconos-ecografias .icono-tarjeta:hover {
+    transform: scale(1.05);
+    box-shadow: 0 6px 15px rgba(72, 156, 193, 0.4);
+  }
+  .iconos-ecografias .icono-tarjeta:active {
+    transform: scale(0.95);
+    box-shadow: 0 3px 8px rgba(72, 156, 193, 0.6);
   }
   /* carousel fotos */
   .carousel {
