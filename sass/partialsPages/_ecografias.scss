@@ -2,10 +2,11 @@
 @use "../partialsGenerales/variables" as c;
 
 /* fuente */
-p{
+body{
     font-family: c.$font;
     font-weight: 400;
     font-style: normal;
+    font-size: 18px;
 }
 
 main{
@@ -20,7 +21,7 @@ main{
 .contenedor{
     display: grid;
     grid-template-areas: 
-    "titulo titulo titulo"
+    "titulo       titulo    titulo"
     "subtitulo1 subtitulo2 subtitulo3"
     "texto1       texto2    texto3"
     "texto1       texto2    texto3"
@@ -28,7 +29,7 @@ main{
     "foto1        foto2     foto3";
 
     /* ancho de cada columna */
-    grid-template-columns: 30% 30% 30%;
+    grid-template-columns: repeat(3, 1fr);
 
     /* alto de cada fila */
     grid-template-rows: auto;
@@ -36,7 +37,7 @@ main{
     row-gap: 20px;
     column-gap: 20px;
     justify-items: center;
-    align-items: start;
+    align-items: center;
     justify-content: center;
     margin-bottom: 0;
     padding-bottom: 60px;
@@ -50,6 +51,7 @@ main{
         border-radius: 6px;
         margin: 10px 0;
     }
+
 }
 
 .titulo{
@@ -80,6 +82,13 @@ main{
     grid-area: texto3;
 }
 
+.texto1,
+.texto2,
+.texto3{
+  padding-left: 0;
+  margin: 0;
+}
+
 .foto1{
     grid-area: foto1;
 }
@@ -90,4 +99,12 @@ main{
 
 .foto3{
     grid-area: foto3;
+}
+
+.contenedor .texto1 ul,
+.contenedor .texto2 ul,
+.contenedor .texto3 ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
 }

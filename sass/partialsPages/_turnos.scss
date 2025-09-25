@@ -5,10 +5,11 @@
 
 @use "../partialsGenerales/extend";
 
-p{
+body{
     font-family: c.$font;
     font-weight: 400;
     font-style: normal;
+    font-size: 18px;
 }
 
 main{
@@ -60,7 +61,8 @@ main{
         padding: 10px;
         border: 1px solid #ccc;
         border-radius: 8px;
-        font-size: 14px;
+        font-size: 18px;
+        text-align: center;
 
         &:focus{
             border-color: c.$celeteoscuro;
@@ -88,5 +90,5 @@ main{
 }
 
 .boton-r{
-    @extend .boton;
+    @extend.boton;
 }

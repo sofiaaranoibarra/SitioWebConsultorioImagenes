@@ -6,10 +6,11 @@
 @use "../partialsGenerales/extend";
 
 /* fuente */
-p{
+body{
   font-family: c.$font;
   font-weight: 400;
   font-style: normal;
+  font-size: 18px;
 }
 
 main{

@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contáctanos</title>
+    <title>Contáctanos - Imagenes</title>
 
     <!---Icono de pestaña-->
     <link rel="shortcut icon" href="../multimedia/logocolor pestaña.png" type="image/x-icon">
@@ -91,26 +91,31 @@
 
             <!-- Formulario -->
             <section class="formulario">
-                <form action="/submit" method="post">
+                <form action="https://formsubmit.co/imagenes.enelacto@gmail.com" method="POST">
                     <h2>Formulario de Contacto</h2>
 
                     <label for="nombreApellido">Nombre y Apellido</label>
                     <input type="text" id="nombreApellido" name="nombreApellido" required>
 
+                    <label for="email">Correo Electronico</label>
+                    <input type="email" name="email" id="email">
+
                     <label for="whatsapp">Número de WhatsApp</label>
                     <input type="tel" id="whatsapp" name="whatsapp" required>
 
-                    <label for="consulta">Consulta</label>
-                    <textarea id="consulta" name="consulta" rows="4" required></textarea>
+                    <label for="comentarios">Consulta</label>
+                    <textarea name="comentarios" id="comentarios" cols="40" rows="5"></textarea>
 
                     <!-- Botón de envío -->
                     <section class="boton">
-                        <a href="#">
+                       <button type="submit">
                             <i></i>
                             <i></i>
                             <span>Enviar</span>
-                        </a>
+                       </button>
                     </section>
+
+                        <!--- <input type="hidden" name="_next" value=""> -->
                 </form>
             </section>
 
