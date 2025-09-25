@@ -12,7 +12,7 @@
    
     body{
         background-color: c.$blanco;
-        font-size: 18px;
+        font-size: 16px;
     }
 
     header{
@@ -53,7 +53,7 @@
     main{
         h2{
             margin-top: 20px;
-            font-size: 18px;
+            font-size: 16px;
         }
     }
 
@@ -128,7 +128,7 @@
     .registro-usuario{
         width: 90%;
         padding: 20px;
-        font-size: 18px;
+        font-size: 16px;
     }
 
     /* boton registro */
@@ -137,7 +137,7 @@
         button{
             width: 130px;
             height: 45px;
-            font-size: 18px;
+            font-size: 16px;
             letter-spacing: 1px;
             gap: 6px;
             padding: 0 10px;
@@ -196,7 +196,7 @@
         font-family: c.$font;
         font-weight: 700;
         font-style: normal;
-        font-size: 28px;
+        font-size: 25px;
         text-align: center;
     }
 
@@ -327,5 +327,29 @@
                 gap: 15px;
             }
         }
+    }
+}
+
+/* Desktop */
+
+@media (min-width: 979px){
+    body{
+        font-size: 18px;
+    }
+
+    h1{
+        font-size: 35px
+    }
+
+    h2{
+        font-size: 25px
+    }
+
+    p{
+        font-size: 16px;
+    }
+
+    ul{
+        font-size: 18px;
     }
 }

@@ -46,7 +46,7 @@ body {
   font-family: "Philosopher", sans-serif;
   font-weight: 400;
   font-style: normal;
-  font-size: 18px;
+  font-size: 16px;
   margin: 0;
   padding-top: 60px;
 }
@@ -120,6 +120,7 @@ body main li {
 .iconos-ecografias .icono-tarjeta p {
   margin-top: 10px;
   font-weight: 600;
+  font-size: 16px;
 }
 .iconos-ecografias .icono-tarjeta:hover {
   transform: scale(1.05);
@@ -148,7 +149,7 @@ body {
   font-family: "Philosopher", sans-serif;
   font-weight: 400;
   font-style: normal;
-  font-size: 18px;
+  font-size: 16px;
 }
 
 main {
@@ -313,7 +314,7 @@ body {
   font-family: "Philosopher", sans-serif;
   font-weight: 400;
   font-style: normal;
-  font-size: 18px;
+  font-size: 16px;
 }
 
 main {
@@ -359,7 +360,7 @@ main main li {
   padding: 10px;
   border: 1px solid #ccc;
   border-radius: 8px;
-  font-size: 18px;
+  font-size: 16px;
   text-align: center;
 }
 .registro-usuario input:focus,
@@ -396,7 +397,7 @@ body {
   font-family: "Philosopher", sans-serif;
   font-weight: 400;
   font-style: normal;
-  font-size: 18px;
+  font-size: 16px;
 }
 
 main {
@@ -438,9 +439,11 @@ main li {
 .ubicacion-formulario .ubicacion-caja .direccion i {
   font-size: 24px;
   color: #489CC1;
+  margin: 80px 0 0 30px;
 }
 .ubicacion-formulario .ubicacion-caja .direccion p {
-  margin: 0;
+  margin: 80px 30px 0 5px;
+  padding: 0 40px 0 0px;
   font-family: "Philosopher", sans-serif;
   font-weight: 400;
 }
@@ -573,7 +576,7 @@ main li {
 @media (max-width: 480px) {
   body {
     background-color: #ffffff;
-    font-size: 18px;
+    font-size: 16px;
   }
   header {
     padding: 8px 15px;
@@ -603,7 +606,7 @@ main li {
   }
   main h2 {
     margin-top: 20px;
-    font-size: 18px;
+    font-size: 16px;
   }
   .iconos-ecografias {
     justify-content: center;
@@ -627,6 +630,7 @@ main li {
   .iconos-ecografias .icono-tarjeta p {
     margin-top: 10px;
     font-weight: 600;
+    font-size: 16px;
   }
   .iconos-ecografias .icono-tarjeta:hover {
     transform: scale(1.05);
@@ -676,13 +680,13 @@ main li {
   .registro-usuario {
     width: 90%;
     padding: 20px;
-    font-size: 18px;
+    font-size: 16px;
   }
   /* boton registro */
   .boton-r button {
     width: 130px;
     height: 45px;
-    font-size: 18px;
+    font-size: 16px;
     letter-spacing: 1px;
     gap: 6px;
     padding: 0 10px;
@@ -728,7 +732,7 @@ main li {
     font-family: "Philosopher", sans-serif;
     font-weight: 700;
     font-style: normal;
-    font-size: 28px;
+    font-size: 25px;
     text-align: center;
   }
   h2 {
@@ -769,6 +773,7 @@ main li {
   .iconos-ecografias .icono-tarjeta p {
     margin-top: 10px;
     font-weight: 600;
+    font-size: 16px;
   }
   .iconos-ecografias .icono-tarjeta:hover {
     transform: scale(1.05);
@@ -845,6 +850,24 @@ main li {
     flex-direction: row;
     justify-content: center;
     gap: 15px;
+  }
+}
+/* Desktop */
+@media (min-width: 979px) {
+  body {
+    font-size: 18px;
+  }
+  h1 {
+    font-size: 35px;
+  }
+  h2 {
+    font-size: 25px;
+  }
+  p {
+    font-size: 16px;
+  }
+  ul {
+    font-size: 18px;
   }
 }
 

@@ -10,7 +10,7 @@ body{
   font-family: c.$font;
   font-weight: 400;
   font-style: normal;
-  font-size: 18px;
+  font-size: 16px;
 }
 
 main{
@@ -52,10 +52,12 @@ main{
       i{
         font-size: 24px;
         color: c.$celeteoscuro;
+        margin: 80px 0 0 30px;
       }
 
       p{
-        margin: 0;
+        margin: 80px 30px 0 5px;
+        padding: 0 40px 0 0px;
         font-family: c.$font;
         font-weight: 400;
       }
@@ -88,23 +90,23 @@ main{
     box-shadow: 0 4px 12px c.$negro;
     box-sizing: border-box;
 
-    form {
+    form{
       display: flex;
       flex-direction: column;
       gap: 15px;
 
-      h2 {
+      h2{
         text-align: center;
         margin-bottom: 20px;
         color: c.$celeteoscuro;
       }
 
-      label {
+      label{
         font-weight: 600;
       }
 
       input,
-      textarea {
+      textarea{
         padding: 10px;
         border: 1px solid #ccc;
         border-radius: 8px;
@@ -113,7 +115,7 @@ main{
     }
 
     input:focus,
-    textarea:focus {
+    textarea:focus{
       border-color: c.$celeteoscuro;
       outline: none;
       box-shadow: 0 0 5px rgba(72, 156, 193, 0.4);
